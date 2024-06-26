@@ -1,0 +1,91 @@
+/* Reset basic styles */
+body, h1, h2, h3, h4, h5, h6, p, a, button, input, form, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #f8f9fa;
+    font-size: 16px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-top: 20px; /* Added margin-top to push container upwards */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea,
+input[type="text"],
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    height: 100px; /* Initial height of textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+textarea:focus,
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}

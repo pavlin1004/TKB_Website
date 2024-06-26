@@ -1,0 +1,49 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    background: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #e0e0e0; /* Lighter background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-link button {
+    display: block;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    font-size: 24px; /* Larger font size */
+    padding: 20px 40px; /* Larger padding */
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto; /* Center the buttons */
+}
+
+.nav-link button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.nav-link button:active {
+    transform: scale(0.95); /* Slightly smaller when clicked */
+}
